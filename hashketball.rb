@@ -176,10 +176,10 @@ def big_shoe_rebounds()
     team_data[:players].each do |player, player_data|
       # Did not find method for easily converting array to fixnum
       # Used [0] to grab the first and only fixnum value instead
-      binding.pry
       if player_data[:shoe] > biggest_shoe.values[0]
         biggest_shoe = {player => player_data[:shoe]}
       end
     end
   end
+  # Puts the player with biggest shoe
 end
