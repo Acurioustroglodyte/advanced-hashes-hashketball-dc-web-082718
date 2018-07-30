@@ -150,8 +150,8 @@ end
 def player_numbers(player_arr)
   player_arr.collect! do |selected_player|
     game_hash.each do |location, team_data|
-      if team_data[:players].has_key?(player)
-        return team_data[:players][player][:number]
+      if team_data[:players].has_key?(selected_player)
+        return team_data[:players][selected_player][:number]
       end
     end
   end
