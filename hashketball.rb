@@ -170,12 +170,12 @@ def player_stats(person_search)
 end
 
 def big_shoe_rebounds()
-  biggest_shoe = {"name", 0}
+  biggest_shoe = {"name" => 0}
   # Find the player with the biggest shoe size
   game_hash.each do |location, team_data|
     team_data[:players].each do |player, player_data|
       if player_data[:shoe] > biggest_shoe.values
-        biggest_shoe = {player, player_data[:shoe]}
+        biggest_shoe = {player => player_data[:shoe]}
       end
     end
   end
