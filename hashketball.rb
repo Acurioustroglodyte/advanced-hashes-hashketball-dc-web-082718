@@ -164,6 +164,7 @@ def player_stats(person_search)
     team_data[:players].each do |player, player_data|
       if player == person_search
         return player_data
+      end
     end
   end
 end
