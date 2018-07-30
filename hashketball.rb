@@ -180,6 +180,6 @@ def big_shoe_rebounds()
         biggest_shoe = {player => player_data[:shoe]}
       end
     end
+    # Return the player with the biggest shoes' rebounds
   end
-  # Puts the player with biggest shoe
 end
