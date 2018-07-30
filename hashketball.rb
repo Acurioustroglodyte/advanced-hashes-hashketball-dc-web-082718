@@ -181,7 +181,6 @@ def big_shoe_rebounds()
       end
     end
     # Return the player with the biggest shoes' rebounds
-    binding.pry
     return team_data[:player][biggest_shoe.keys[0]]
   end
 end
