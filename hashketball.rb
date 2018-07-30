@@ -147,13 +147,11 @@ def team_names()
   return [game_hash[:home][:team_name], game_hash[:away][:team_name]]
 end
 
-def player_numbers(player_arr)
-  binding.pry
-  player_arr.collect! do |selected_player|
-    game_hash.each do |location, team_data|
-      if team_data[:players].has_key?(selected_player)
-        return team_data[:players][selected_player][:number]
-      end
+def player_numbers(team)
+  team_numbers = []
+  game_hash.each do |location, location_data|
+    if location_data[:team_name] == team
+      binding.pry
     end
   end
 end
