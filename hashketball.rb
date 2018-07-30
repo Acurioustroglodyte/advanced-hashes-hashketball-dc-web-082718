@@ -148,7 +148,7 @@ def team_names()
 end
 
 def player_numbers(player_arr)
-  puts player_arr
+  binding.pry
   player_arr.collect! do |selected_player|
     game_hash.each do |location, team_data|
       if team_data[:players].has_key?(selected_player)
