@@ -149,9 +149,12 @@ end
 
 def player_numbers(team)
   team_numbers = []
-  game_hash.each do |location, location_data|
-    if location_data[:team_name] == team
-      binding.pry
+  game_hash.each do |location, team_data|
+    if team_data[:team_name] == team
+      team_data[:players].each do |player, player_data|
+        team_numbers << player_data[:number]
+      end
     end
   end
+  team_numbers
 end
