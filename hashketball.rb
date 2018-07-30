@@ -181,6 +181,7 @@ def big_shoe_rebounds()
       end
     end
     # Return the player with the biggest shoes' rebounds
+    puts team_data[:player][(biggest_shoe.keys()[0])]
     return team_data[:player][(biggest_shoe.keys()[0])]
   end
 end
